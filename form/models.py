@@ -7,7 +7,7 @@ class Responses(models.Model):
     Department=models.CharField(max_length=30,default="")
     Year=models.CharField(max_length=30,default="")
     Title=models.CharField(max_length=30,default="")
-    Link=models.CharField(max_length=300,default="")
+    Link=models.CharField(max_length=3000,default="")
     def __str__(self):
         return self.Email
     
