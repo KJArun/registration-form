@@ -1,0 +1,7 @@
+services:
+  - type: web
+    name: form
+    buildCommand: "./build.sh"
+    env: python
+    startCommand: "gunicorn form.wsgi:application"
+
